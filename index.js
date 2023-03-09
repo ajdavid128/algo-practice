@@ -50,7 +50,6 @@ function validatePIN (pin) {
 // Problem 3: -------------------------------------------------------------
 
 // ChatGPT Solution:
-
 function isTriangle(a,b,c)
 { if (a <= 0 || b <= 0 || c <= 0) {
   return false;
@@ -61,3 +60,9 @@ function isTriangle(a,b,c)
     return false;
   }
 };
+
+// Community Solution:
+function isTriangle(a,b,c)
+{
+   return a + b > c && a + c > b && c + b > a;
+}
