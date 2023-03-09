@@ -66,3 +66,20 @@ function isTriangle(a,b,c)
 {
    return a + b > c && a + c > b && c + b > a;
 }
+
+
+// Problem 4: -------------------------------------------------------------
+
+// ChatGPT Solution:
+function toJadenCase(str) {
+    let words = str.split(' '); // Split the string into an array of words using the split() method.
+    for (let i = 0; i < words.length; i++) {
+      let word = words[i];
+      words[i] = word.charAt(0).toUpperCase() + word.slice(1);
+    }// Loop through the array of words and capitalize the first letter of each word using the toUpperCase() method on the first character of the word, and then concatenate the capitalized first character with the rest of the word using the slice() method.
+
+    return words.join(' '); // Join the array of words back into a string using the join() method with a space as the separator.
+  }
+
+
+
