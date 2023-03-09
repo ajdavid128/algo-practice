@@ -1,4 +1,4 @@
-// Problem 1:
+// Problem 1: -------------------------------------------------------------
 
 function makeNegative(num) {
     if (num > 0) {
@@ -9,7 +9,7 @@ function makeNegative(num) {
 };
 
 
-// Problem 2:
+// Problem 2: -------------------------------------------------------------
 
 // My attempt: Incorrect
 function validatePIN (pin) {
@@ -33,3 +33,31 @@ function validatePIN(pin) {
     }
     return false;
   }
+
+
+//   Community Solution:
+function validatePIN (pin) {
+    pin = pin.split('')
+   const findNaN = pin.find(character => !(parseInt(character) >= 0))
+    if ((pin.length === 4 || pin.length === 6) && !findNaN) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+
+// Problem 3: -------------------------------------------------------------
+
+// ChatGPT Solution:
+
+function isTriangle(a,b,c)
+{ if (a <= 0 || b <= 0 || c <= 0) {
+  return false;
+}
+  if (a + b > c && a + c > b && b + c > a) {
+    return true;
+  } else {
+    return false;
+  }
+};
