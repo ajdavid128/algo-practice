@@ -1,5 +1,11 @@
 // McGraw Hill Question:
 
+// Write a function that takes in a string made up of brackets {}.
+// The function should return whether or not the brackets are properly nested.
+
+// Sample input: "[([])(){}]" Sample output: true
+// Sample input: "([)]" Sample output: false
+
 // ChatGPT Solution:
 function areBracketsNested(str) {
     const stack = [];
