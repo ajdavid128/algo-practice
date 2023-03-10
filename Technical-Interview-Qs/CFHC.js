@@ -8,6 +8,14 @@
 // - [5, 48, 8, 20, 7, 22]
 // - [78, 3, 8, 33, 32, 90, 63]
 
+function divideBySeven (arr){
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 7 === 0) {
+            return arr[i];
+        }
+    }
+}
+
 
 
 
