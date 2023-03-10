@@ -17,9 +17,6 @@ function divideBySeven (arr){
 }
 
 
-
-
-
 // Question 2: -------------------------------------------------------------
 // You're given two lists of n amount of numbers. All of those numbers are the exact same, except the second list has one additional number the other does not.
 
@@ -28,3 +25,11 @@ function divideBySeven (arr){
 // For example:
 // [5, 65, 4, 8, 13, 27]
 // [5, 65, 4, 8, 12, 13, 27]
+
+function findExtraNumber(a,b) {
+    for (let i = 0; i <a.length; i++) {
+        if (a[i] !== b[i]) {
+            return b[i];
+        }
+    }
+}
