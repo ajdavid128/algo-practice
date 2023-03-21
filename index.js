@@ -98,3 +98,25 @@ function seriesSum(n) {
   }
   return sum.toFixed(2)
 }
+
+/* In this solution, we use a loop to add up the terms in the series. The loop runs for n iterations, and on each iteration, we add the next term in the series to the sum variable. The terms in the series have a denominator that increases by 3 with each term, starting at 1. So, the denominator for the first term is 1, the denominator for the second term is 4 (1 + 3), the denominator for the third term is 7 (4 + 3), and so on. We calculate the denominator for each term using the formula 1 + i * 3, where i is the current iteration index.
+
+Finally, we use the toFixed() method to round the sum to two decimal places and return it as a string.
+
+Note that if n is 0, the loop will not run, and the function will return the string "0.00", as required by the problem statement. */
+
+
+
+// Problem 6: -------------------------------------------------------------
+
+function sumSum(a, b) {
+  let sum = 0;
+  for (let i = Math.min(a,b); i < Math.max(a,b); i++) {
+    sum+= i;
+  }
+  return sum;
+}
+
+/* In this solution, we use a loop to add up all the integers between and including a and b. To do this, we first determine which of the two numbers is smaller and which is larger using the Math.min() and Math.max() functions. Then, we use a for loop to iterate from the smaller number to the larger number, and we add each number to the sum variable.
+
+Finally, we return the sum variable, which contains the sum of all the integers between and including a and b. Note that if a and b are equal, the loop will run only once, and the function will return a or b. */
