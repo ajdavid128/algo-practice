@@ -122,8 +122,23 @@ function sumSum(a, b) {
 Finally, we return the sum variable, which contains the sum of all the integers between and including a and b. Note that if a and b are equal, the loop will run only once, and the function will return a or b. */
 
 
-// Problem 6: -------------------------------------------------------------
+// Problem 8: -------------------------------------------------------------
 
 function greet(name, owner) {
   return name === owner ? "Hello boss" : "Hello guest";
 }
+
+
+// Problem 9: -------------------------------------------------------------
+
+function grow(x) {
+  let sum = 1;
+  for (let i = 0; i < x.length; i++) {
+    sum *= x[i];
+  }
+  return sum;
+}
+
+
+// Community Solution:
+const grow = (x) => x.reduce((a, b) => a * b);
