@@ -107,7 +107,7 @@ Note that if n is 0, the loop will not run, and the function will return the str
 
 
 
-// Problem 6: -------------------------------------------------------------
+// Problem 7: -------------------------------------------------------------
 
 function sumSum(a, b) {
   let sum = 0;
@@ -120,3 +120,10 @@ function sumSum(a, b) {
 /* In this solution, we use a loop to add up all the integers between and including a and b. To do this, we first determine which of the two numbers is smaller and which is larger using the Math.min() and Math.max() functions. Then, we use a for loop to iterate from the smaller number to the larger number, and we add each number to the sum variable.
 
 Finally, we return the sum variable, which contains the sum of all the integers between and including a and b. Note that if a and b are equal, the loop will run only once, and the function will return a or b. */
+
+
+// Problem 6: -------------------------------------------------------------
+
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
+}

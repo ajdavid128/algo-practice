@@ -74,3 +74,12 @@ Examples (a, b) --> output (explanation)
 (-1, 0) --> -1 (-1 + 0 = -1)
 (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 Your function should only return a number, not the explanation about how you get that number.
+
+# Problem 8
+Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+Use conditionals to return the proper message:
+
+case =>	return
+name equals owner => 'Hello boss'
+otherwise => 'Hello guest'
