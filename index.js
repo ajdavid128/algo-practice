@@ -82,10 +82,19 @@ function toJadenCase(str) {
   }
 
 
-// Problem 4: -------------------------------------------------------------
+// Problem 5: -------------------------------------------------------------
 
 function smash(words) {
   return words.join(' '); // Join the array of words back into a string using the join() and adding a space to the quotations to apply space between works.
 }
 
 
+// Problem 6: -------------------------------------------------------------
+
+function seriesSum(n) {
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+   sum+=  1 / (1 + i * 3);
+  }
+  return sum.toFixed(2)
+}
