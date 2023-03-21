@@ -82,4 +82,10 @@ function toJadenCase(str) {
   }
 
 
+// Problem 4: -------------------------------------------------------------
+
+function smash(words) {
+  return words.join(' '); // Join the array of words back into a string using the join() and adding a space to the quotations to apply space between works.
+}
+
 
