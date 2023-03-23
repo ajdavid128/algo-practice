@@ -146,3 +146,8 @@ const grow = (x) => x.reduce((a, b) => a * b);
 
 // Problem 9: -------------------------------------------------------------
 
+function descendingOrder(n){
+  let arr = `${n}`.split("")
+  let order = arr.sort((a, b) => b-a).join("")
+  return Math.abs(order)
+}
