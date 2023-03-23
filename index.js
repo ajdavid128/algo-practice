@@ -142,3 +142,7 @@ function grow(x) {
 
 // Community Solution:
 const grow = (x) => x.reduce((a, b) => a * b);
+
+
+// Problem 9: -------------------------------------------------------------
+
