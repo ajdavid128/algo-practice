@@ -151,3 +151,7 @@ function descendingOrder(n){
   let order = arr.sort((a, b) => b-a).join("")
   return Math.abs(order)
 }
+
+
+// Problem 9: -------------------------------------------------------------
+
