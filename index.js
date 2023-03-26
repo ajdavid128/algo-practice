@@ -189,3 +189,15 @@ function golfScore(strokes, par) {
 // Problem 13: -------------------------------------------------------------
 
 //ChatGPT Solution:
+function solution(str){
+  let pairs = []
+  for (let i = 0; i < str.length; i += 2) {
+   let newPair = str[i] + (str[i + 1] || '_');
+   pairs.push(newPair)
+  }
+ return pairs;
+}
+
+/* Here, we start by initializing an empty array pairs to hold the pairs of characters. We then loop through the string using a step of 2, i.e., we increment the loop counter by 2 in each iteration (i += 2). In each iteration, we create a pair by concatenating the current character with the next character (or an underscore if there is no next character). We use the || operator to provide a default value of '_' in case str[i + 1] is undefined (i.e., there is no next character).
+
+Finally, we push the pair into the pairs array and continue the loop. After the loop completes, we return the pairs array. */
