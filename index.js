@@ -219,3 +219,13 @@ function alphabetPosition(text) {
   return result.trim();
 }
 
+/*Here's how it works:
+
+We initialize an empty string called result to store the output.
+We iterate through each character in the input string using a for loop.
+We convert each character to lowercase using the toLowerCase() method.
+We check if the character is a letter by comparing its ASCII code to the ASCII codes of 'a' and 'z'.
+If the character is a letter, we convert it to its corresponding position in the alphabet by subtracting the ASCII code of 'a' (which is 97) and adding 1.
+We append the resulting position to the result string followed by a space.
+We return the result string after trimming any leading or trailing spaces.
+Note that we're using the trim() method to remove any leading or trailing spaces from the result string. This is because we're adding a space after each position, including the last one, which can result in a trailing space.*/
