@@ -187,3 +187,5 @@ function golfScore(strokes, par) {
 
 
 // Problem 13: -------------------------------------------------------------
+
+//ChatGPT Solution:
