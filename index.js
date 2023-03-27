@@ -232,7 +232,13 @@ Note that we're using the trim() method to remove any leading or trailing spaces
 
 
 // Problem 15: -------------------------------------------------------------
-
+function divisable(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]%7 === 0) {
+      return arr[i];
+    }
+  }
+}
 
 // Problem 16: -------------------------------------------------------------
 
