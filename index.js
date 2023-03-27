@@ -229,3 +229,21 @@ If the character is a letter, we convert it to its corresponding position in the
 We append the resulting position to the result string followed by a space.
 We return the result string after trimming any leading or trailing spaces.
 Note that we're using the trim() method to remove any leading or trailing spaces from the result string. This is because we're adding a space after each position, including the last one, which can result in a trailing space.*/
+
+
+// Problem 15: -------------------------------------------------------------
+
+
+// Problem 16: -------------------------------------------------------------
+
+
+// Problem 17: -------------------------------------------------------------
+
+
+// Problem 18: -------------------------------------------------------------
+
+
+// Problem 19: -------------------------------------------------------------
+
+
+// Problem 20: -------------------------------------------------------------
