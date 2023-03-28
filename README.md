@@ -168,3 +168,11 @@ For example:
 FizzBuzz! Write a function that counts to 100 printing each number along the way. Every time the program comes across a number that is divisible by 3 print the string "Fizz" and every time it comes across a number that is divisible by 5 print the string "Buzz". In addition to printing the words separately, print the string "FizzBuzz" for every number divisble by both 3 and 5.
 
 # Problem 18
+Writre a loop that makes seven calls to console.log to output the following triangle:
+#
+##
+###
+####
+#####
+######
+#######
