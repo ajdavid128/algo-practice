@@ -297,7 +297,18 @@ function solution(number){
       arr.push(i)
     }
   }
-  return arr.reduce((a, b) => a + b, 0)
+  return arr.reduce((a, b) => a + b, 0);
+}
+
+// Community Solution:
+function solution(number){
+  let sum = 0;
+  for (let i = 0; i < number; i++) {
+    if (i%3 ===0 || i%5 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
 }
 
 
