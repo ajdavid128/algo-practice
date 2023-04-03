@@ -313,6 +313,26 @@ function solution(number){
 
 
 // Problem 22: -------------------------------------------------------------
+// ChatGPT Solution:
+function countCharacters(str) {
+  let result = {};
+  for (let i = 0; i < str.length; i++) {
+    if (result[str[i]]) {
+      result[str[i]]++;
+    } else {
+      result[str[i]] = 1;
+    }
+  }
+  return result;
+}
+
+
+/* We define a function called countCharacters that takes a string as its parameter.
+We initialize an empty object literal called result that we will use to store the counts of each character.
+We loop through the string using a for loop, starting at the first character (index 0) and ending at the last character (index str.length - 1).
+For each character in the string, we check if it exists as a property in the result object. If it does, we increment its count by 1. If it doesn't, we add it as a property to the result object with a count of 1.
+After looping through all the characters in the string, we return the result object containing the counts of each character.
+If the string is empty, the function will return an empty object literal {} because the for loop won't run at all. */
 
 
 // Problem 23: -------------------------------------------------------------
