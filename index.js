@@ -508,11 +508,8 @@ function getCount(str) {
         case 'u':
         vowelCount++;
         break;
-        default:
-        break;
     }
   }
-  
   return vowelCount;
 }
 
