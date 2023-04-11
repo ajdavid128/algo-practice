@@ -520,7 +520,7 @@ function getCount(str) {
 
 // Problem 26: -------------------------------------------------------------
 function highAndLow(str){
-  let arr = str.split(' ').filter(e => e !== ' ')
+  let arr = str.split(' ')
   return `${Math.max(...arr)} ${Math.min(...arr)}`
 }
 
