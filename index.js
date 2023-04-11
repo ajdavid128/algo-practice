@@ -430,7 +430,7 @@ function updateRecords(records, id, prop, value) {
 }
 
 // Problem 24: -------------------------------------------------------------
-// community solution
+// community solution 1
 function duplicateCount(text){
   var lower = text.toLowerCase();
   var count = 0;
@@ -445,6 +445,14 @@ function duplicateCount(text){
   
   return count;
 }
+
+// community solution 2
+function duplicateCount(text){
+  return text.toLowerCase().split('').filter(function(val, i, arr){
+    return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+  }).length;
+}
+
 
 
 
