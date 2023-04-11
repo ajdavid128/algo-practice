@@ -535,7 +535,15 @@ function findUniq(arr) {
   }
 
 // Problem 28: -------------------------------------------------------------
-
+var countSheep = function (num){
+  let str = ""
+  let count = 0
+  for (let i = 0; i < num; i++) {
+    count++;
+    str = str + `${count} sheep...`
+  }
+  return str;
+}
 
 // Problem 29: -------------------------------------------------------------
 
