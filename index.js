@@ -527,7 +527,12 @@ function highAndLow(str){
 
 
 // Problem 27: -------------------------------------------------------------
-
+function findUniq(arr) {
+  let uniq = [...new Set(arr)]
+  // this assignment creates a new array of only unique elements because Set does not allow for duplicates
+  return arr[0] !== arr[1] && arr[0] !== arr[2] ? uniq[0] : uniq[1]
+  //comparing the first element with the second and thrid will determine if it is either the first element in the uniq array or the second element
+  }
 
 // Problem 28: -------------------------------------------------------------
 
