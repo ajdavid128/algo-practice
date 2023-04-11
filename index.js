@@ -494,7 +494,27 @@ function duplicateCount(text){
 // In this function, we first convert the input string to lowercase to make it case-insensitive. Then, we loop through each character in the input string, skipping non-alphabetic and non-numeric characters. We use an object charCounts to store the counts of each character. Finally, we loop through the charCounts object to count the number of characters with counts greater than 1, which gives us the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string.
 
 // Problem 25: -------------------------------------------------------------
-
+function getCount(str) {
+  let vowelCount = 0
+  
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    
+    switch (char) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        vowelCount++;
+        break;
+        default:
+        break;
+    }
+  }
+  
+  return vowelCount;
+}
 
 // Problem 26: -------------------------------------------------------------
 
