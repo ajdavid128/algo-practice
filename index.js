@@ -516,6 +516,11 @@ function getCount(str) {
   return vowelCount;
 }
 
+// communtiy solution
+function getCount(str) {
+  return str.split('').filter(c => "aeiouAEIOU".includes(c)).length;
+ }
+
 // Problem 26: -------------------------------------------------------------
 
 
