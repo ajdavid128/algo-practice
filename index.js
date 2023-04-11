@@ -453,7 +453,15 @@ function duplicateCount(text){
   }).length;
 }
 
+// community solution 3
+function duplicateCount(text){
+  return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+}
 
+// community solution 4
+function duplicateCount(text){
+  return new Set(text.toLowerCase().match(/(.)(?=.*\1)/gi)).size
+}
 
 
 // ChatGPT Solution
