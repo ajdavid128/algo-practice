@@ -430,6 +430,34 @@ function updateRecords(records, id, prop, value) {
 }
 
 // Problem 24: -------------------------------------------------------------
+// ChatGPT Solution
+function duplicateCount(text){
+  let str = text.toLowerCase();
+  const charCounts = {};
+  
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i]
+    if (!char.match(/[a-z0-9]/i)) continue;
+    // .match() is a method to test against regex
+    //this regex tests for alphaNumeric values and the 'i' ignores case-sensitivity
+
+    if (!(char in charCounts)) {
+      charCounts[char] = 1;
+    } else {
+      charCounts[char]++;
+    }
+  }
+
+  let duplicates = 0
+  for (const char in charCounts){
+    if(charCounts[char] > 1){
+      duplicates++;
+    }
+  }
+  return duplicates;
+}
+
+// In this function, we first convert the input string to lowercase to make it case-insensitive. Then, we loop through each character in the input string, skipping non-alphabetic and non-numeric characters. We use an object charCounts to store the counts of each character. Finally, we loop through the charCounts object to count the number of characters with counts greater than 1, which gives us the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string.
 
 // Problem 25: -------------------------------------------------------------
 
