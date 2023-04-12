@@ -303,3 +303,48 @@ Examples
 [7, 1]  =>  [1, 7]
 [5, 8, 6, 3, 4]  =>  [3, 8, 6, 5, 4]
 [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  =>  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
+
+# Problem 31
+Given an array of integers, return a new array with each value doubled.
+
+For example:
+
+[1, 2, 3] --> [2, 4, 6]
+
+# Problem 32
+
+# Problem 33
+
+# Problem 34
+
+# Problem 35
+
+# Problem 36
+
+# Problem 37
+
+# Problem 38
+
+# Problem 39
+
+# Problem 40
+
+# Problem 41
+
+# Problem 42
+
+# Problem 43
+
+# Problem 44
+
+# Problem 45
+
+# Problem 46
+
+# Problem 47
+
+# Problem 48
+
+# Problem 49
+
+# Problem 50
