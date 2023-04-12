@@ -599,3 +599,9 @@ function sortOddNumbers(arr) {
 }
 
 // The function first creates an array to store the odd numbers by looping through the input array and extracting the odd numbers using the modulo operator (%). Then, it sorts the odd numbers in ascending order using the sort() method with a custom comparator function. Finally, it loops through the input array again and replaces the odd numbers with the sorted odd numbers using the shift() method, which removes the first element from the oddNumbers array.
+
+// Community solution:
+function sortArray(array) {
+  const odd = array.filter((x) => x % 2).sort((a,b) => a - b);
+  return array.map((x) => x % 2 ? odd.shift() : x);
+}
