@@ -635,6 +635,19 @@ function oddOrEven(arr) {
 
 
 // Problem 33: -------------------------------------------------------------
+function points(games) {
+  let count = 0
+  for (let i = 0; i < games.length; i++) {
+    let x = games[i].split('')
+    if (x[0] === x[2]) {
+      count++;
+    } else if (x[0] > x[2]) {
+      count = count + 3
+    }
+  }
+  return count;
+}
+
 
 
 // Problem 34: -------------------------------------------------------------
