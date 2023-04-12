@@ -546,6 +546,25 @@ var countSheep = function (num){
 }
 
 // Problem 29: -------------------------------------------------------------
+// ChatGPT solution:
+function accum(str) {
+  // Convert the input string to uppercase
+  str = str.toUpperCase();
 
+  // Initialize an empty array to store the result
+  const result = [];
+
+  // Loop through each character in the input string
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    // Append the current character repeated by its index + 1 to the result array
+    result.push(char + char.toLowerCase().repeat(i));
+  }
+
+  // Join the result array with "-" and return the final string
+  return result.join("-");
+}
+
+// The function first converts the input string to uppercase using toUpperCase() method to ensure consistent capitalization. Then, it loops through each character in the input string, and for each character, it appends the character itself repeated by its index + 1 to the result array, with the additional step of converting the character to lowercase using toLowerCase() method. Finally, the result array is joined with "-" using join() method to create the final string with hyphens as separators.
 
 // Problem 30: -------------------------------------------------------------
