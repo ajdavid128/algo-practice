@@ -567,4 +567,9 @@ function accum(str) {
 
 // The function first converts the input string to uppercase using toUpperCase() method to ensure consistent capitalization. Then, it loops through each character in the input string, and for each character, it appends the character itself repeated by its index + 1 to the result array, with the additional step of converting the character to lowercase using toLowerCase() method. Finally, the result array is joined with "-" using join() method to create the final string with hyphens as separators.
 
+// Community solution:
+function accum(s) {
+	return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+}
+
 // Problem 30: -------------------------------------------------------------
