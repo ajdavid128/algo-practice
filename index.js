@@ -573,3 +573,29 @@ function accum(s) {
 }
 
 // Problem 30: -------------------------------------------------------------
+// ChatGPT Solution:
+function sortOddNumbers(arr) {
+  // Create an array to store odd numbers
+  const oddNumbers = [];
+
+  // Loop through the input array and extract the odd numbers
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      oddNumbers.push(arr[i]);
+    }
+  }
+
+  // Sort the odd numbers in ascending order
+  oddNumbers.sort((a, b) => a - b);
+
+  // Loop through the input array again and replace odd numbers with sorted odd numbers
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      arr[i] = oddNumbers.shift();
+    }
+  }
+
+  return arr;
+}
+
+// The function first creates an array to store the odd numbers by looping through the input array and extracting the odd numbers using the modulo operator (%). Then, it sorts the odd numbers in ascending order using the sort() method with a custom comparator function. Finally, it loops through the input array again and replaces the odd numbers with the sorted odd numbers using the shift() method, which removes the first element from the oddNumbers array.
