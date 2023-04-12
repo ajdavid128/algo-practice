@@ -614,7 +614,18 @@ function maps(x){
 
 
 // Problem 32: -------------------------------------------------------------
-
+function oddOrEven(array) {
+  //need to account for empty array by checking if length of the array is 0 and if it is make it have one element of 0
+  if (array.length === 0) {
+    array = [0]
+  }
+  
+  if (array.reduce((a,b)=> a+b)%2 === 0) {
+    return "even"
+  } else {
+    return "odd"
+  }
+}
 
 
 // Problem 33: -------------------------------------------------------------
