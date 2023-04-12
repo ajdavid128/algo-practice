@@ -627,6 +627,12 @@ function oddOrEven(array) {
   }
 }
 
+// Community Solution:
+function oddOrEven(arr) {
+  return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
+  // within the reduce method they use 0 as an intial value effectively accounting for an empty array
+}
+
 
 // Problem 33: -------------------------------------------------------------
 
