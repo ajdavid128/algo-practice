@@ -401,6 +401,11 @@ Sample Output:
 Find the median integer of an array of numbers. The array must be sorted so the integers are in order (either lowest to highest or viceversa). The array provided will always have an odd number of elements. 
 
 # Problem 38
+Given an array of integers, where all elements but one occur twice, find the unique element.
+
+Example
+a = [1, 2, 3, 4, 3, 2, 1]
+The unique element is 4.
 
 # Problem 39
 
