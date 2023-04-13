@@ -750,7 +750,19 @@ function median(arr) {
 
 
 // Problem 38: -------------------------------------------------------------
+//psuedo-code:
+//sort array into ascending order
+//create a loop to iterate over array, everytime the loop executes add 2 to i
+//in the loop create conditional that compares current arr index with next array index and if they are not the same, return the intial array index in that loop iteration
 
+function lonelyinteger(a) {
+    a.sort((a,b) => a-b)
+  for (let i = 0; i < a.length; i += 2) {
+    if (a[i] !== a[i + 1]) {
+      return(a[i])
+    }
+  }
+}
 
 
 // Problem 39: -------------------------------------------------------------
