@@ -651,7 +651,40 @@ function points(games) {
 
 
 // Problem 34: -------------------------------------------------------------
+//psuedo-code:
+// need to find ratios of neg, pos, zero of arr
+//intialize pos, neg and zero variables to 0
+//iterate through the length of the array
+//each time it loops we will check via conditional if the current index is a positive, negative or zero number
+//based on the value we add 1 to the respective count variable
+// when loop is finished we will reassign variable values to their respective ratios by dividing each count variable by the length of the array
+//we will then recieve a float value
+//will need to figure out how to get to 6 decimal places: use toFixed() method to set number of decimal places and turn value into string
 
+
+
+function plusMinus(arr) {
+  let negCount = 0
+  let posCount = 0
+  let zeroCount = 0
+  
+  for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 0) {
+          posCount++;
+      } else if (arr[i] < 0) {
+          negCount++;
+      } else {
+          zeroCount++;
+      }
+  }
+  negCount /= arr.length;
+  posCount /= arr.length;
+  zeroCount /= arr.length;
+  
+  console.log(posCount.toFixed(6));
+  console.log(negCount.toFixed(6));
+  console.log(zeroCount.toFixed(6));
+}
 
 // Problem 35: -------------------------------------------------------------
 
