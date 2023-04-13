@@ -398,6 +398,7 @@ Sample Output:
 19:05:45
 
 # Problem 37
+Find the median integer of an array of numbers. The array provided will always have an odd number of elements. 
 
 # Problem 38
 
