@@ -739,6 +739,14 @@ function timeConversion(s) {
 }
 
 // Problem 37: -------------------------------------------------------------
+//psuedo-code:
+//first I will sort the array by ascending values using sort method
+//then I will use bracked notation to find the median value by taking the arr length - 1 divided by 2
+
+function median(arr) {
+  arr.sort((a,b) => a - b)
+  return arr[(arr.length -1) / 2]
+}
 
 
 // Problem 38: -------------------------------------------------------------

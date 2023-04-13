@@ -398,7 +398,7 @@ Sample Output:
 19:05:45
 
 # Problem 37
-Find the median integer of an array of numbers. The array provided will always have an odd number of elements. 
+Find the median integer of an array of numbers. The array must be sorted so the integers are in order (either lowest to highest or viceversa). The array provided will always have an odd number of elements. 
 
 # Problem 38
 
