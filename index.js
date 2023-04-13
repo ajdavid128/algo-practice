@@ -687,6 +687,23 @@ function plusMinus(arr) {
 }
 
 // Problem 35: -------------------------------------------------------------
+//psuedo-code:
+//first make array in ascending order using .sort() method
+//initialize 2 variables: 1 for highest value and 1 for lowest
+//use .reduce() method and store values into variables
+//subtract arr[0] from highest variable
+//subtract arr[4] from lowest variable
+//console.log the values interpolated with a space between them
+
+function miniMaxSum(arr) {
+  arr.sort((a,b) => a-b);  
+  let min, max
+  
+  min = arr.reduce((a,b) => a+b) - arr[4]
+  max = arr.reduce((a,b) => a+b) - arr[0]
+
+  console.log(`${min} ${max}`)
+}
 
 
 // Problem 36: -------------------------------------------------------------
