@@ -707,7 +707,36 @@ function miniMaxSum(arr) {
 
 
 // Problem 36: -------------------------------------------------------------
+//psuedo-code:
+//to begin we will intialize 2 variables, hour and time
+//we must take the first integer off of the string (before the first colon) and store it in the hour variable (using .substring() method)
+//next we will store the rest of the separated string in the time variable (minus the AM/PM)
+//from her we will use a series of conditional statements to manipulate the hour and time variables:
+//first conditional will determine if it is 12am or 12 pm and will return '00' + time variable
+//second conditional will determine if the hour is 12PM and will return hour + time variables
+//third conditional will determine if the hour is less than 12 and it is PM and will convert the hour variable to an integer and return 12 + hour + time variables
+//our last conditional will determine if the time is before 12PM and will return hour + time 
 
+
+function timeConversion(s) {
+  let hour, time;
+  hour = s.substring(0,2);
+  time = s.substring(2,8);
+  if (hour == 12 && s.indexOf("AM") !== -1) {
+      return '00' + time;
+  } 
+  if (hour == 12 && s.indexOf("PM") !== -1) {
+      return hour + time;
+  }
+  if (1 <= hour < 12 && s.indexOf("PM") !== -1) {
+      hour = Math.abs(hour)
+      return (12 + hour + time)
+  }
+  if (hour < 12 && s.indexOf("AM") !== -1) {
+      return hour + time
+  }
+
+}
 
 // Problem 37: -------------------------------------------------------------
 
