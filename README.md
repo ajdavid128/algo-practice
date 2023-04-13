@@ -349,6 +349,14 @@ our team always plays 10 matches in the championship
 0 <= y <= 4
 
 # Problem 34
+Create a function that accepts an array and prints out the ratio of positive numbers, negative numbers and zeros within the array with exactly 6 decimal places.
+
+Rules: numbers in array will be: -100 <= n <= 100
+Print the following 3 lines, each to 6 decimals:
+
+1. proportion of positive values
+2. proportion of negative values
+3. proportion of zeros
 
 # Problem 35
 
