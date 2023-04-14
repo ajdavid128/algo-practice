@@ -790,7 +790,22 @@ function diagonalDifference(arr) {
 
 
 // Problem 40: -------------------------------------------------------------
+//psuedo-code:
+//intialize empty array for frequency array
+//create for loop that iterates up to 100 times and each time it pushes a 0 into the freqArr variable array
+//after that loop finishes create another loop that iterates up to the length of the array argument and each time it iterates it will find the index of the freqArr using the current index based on i of the argumented array and based on that value it will add 1 to that specific index of the freqArr
+//return the freqArr after loop completes
 
+function countingSort(arr) {
+  let freqArr = []
+  for (let i = 0; i < 100; i++) {
+      freqArr.push(0)
+  }
+  for (let i = 0; i < arr.length; i++) {
+      freqArr[arr[i]] += 1
+  }
+  return freqArr;
+}
 
 // Problem 41: -------------------------------------------------------------
 
