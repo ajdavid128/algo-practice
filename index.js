@@ -766,7 +766,27 @@ function lonelyinteger(a) {
 
 
 // Problem 39: -------------------------------------------------------------
+//psuedo-code:
+//arr.length is the n number of rows and number of integers in each row
+//intializing 3 variables: two with value of 0 we will use these to track the values of left-to-right and right-to-left sums of diagonals, the third will be n the arr.length value
+//create a for loop that starts count at 0 and loops through until the length of n, incrementing by 1 each time the loop completes
+//within the loop we will add arr[i][i] to the left-to-right variable & add arr[i][n - 1 - i] to the right to left variable
+//after the loop completes we will subtract the variables that acounted for the values from the other and return the absolute value using Math.abs()
 
+
+
+function diagonalDifference(arr) {
+  let n = arr.length;
+  let leftRight = 0;
+  let rightLeft = 0;
+  
+  for (let i = 0; i < n; i++) {
+      leftRight += arr[i][i];
+      rightLeft += arr[i][n - 1 - i];
+  }
+  return Math.abs(leftRight - rightLeft);
+
+}
 
 
 // Problem 40: -------------------------------------------------------------
