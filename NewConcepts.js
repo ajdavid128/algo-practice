@@ -71,11 +71,25 @@ function countdown(n){
     return countArray;
   }
 }
+// -------------------------------------------------------------
 
+// Recursion continued:
+// We have defined a function named rangeOfNumbers with two parameters. The function should return an array of integers which begins with a number represented by the startNum parameter and ends with a number represented by the endNum parameter. The starting number will always be less than or equal to the ending number. Your function must use recursion by calling itself and not use loops of any kind. It should also work for cases where both startNum and endNum are the same.
+
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+    return [];
+  } else {
+    const countArray = rangeOfNumbers(startNum, endNum -1);
+    countArray.push(endNum);
+    return countArray;
+  }
+};
 
 
 
 // -------------------------------------------------------------
+
 // Use the parseInt Function with a Radix
 // The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36.
 
