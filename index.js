@@ -808,7 +808,24 @@ function countingSort(arr) {
 }
 
 // Problem 41: -------------------------------------------------------------
-
+//ChatGPT solution:
+function lookUpProfile(name, prop) {
+  // Iterate through the contacts array
+  for (let i = 0; i < contacts.length; i++) {
+    // Check if the current contact's firstName matches the given name
+    if (contacts[i].firstName === name) {
+      // If prop is a property of the current contact, return its value
+      if (contacts[i].hasOwnProperty(prop)) {
+        return contacts[i][prop];
+      } else {
+        // If prop is not a valid property of the contact, return "No such property"
+        return "No such property";
+      }
+    }
+  }
+  // If no matching contact is found, return "No such contact"
+  return "No such contact";
+}
 
 // Problem 42: -------------------------------------------------------------
 
