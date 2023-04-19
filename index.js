@@ -846,7 +846,15 @@ function solution(str, ending){
 }
 
 // Problem 43: -------------------------------------------------------------
-
+function filter_list(l) {
+  let arr = []
+  l.map(i => {
+    if (typeof i === "number") {
+      arr.push(i)
+    }
+  })
+  return arr;
+}
 
 // Problem 44: -------------------------------------------------------------
 
