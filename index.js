@@ -828,7 +828,17 @@ function lookUpProfile(name, prop) {
 }
 
 // Problem 42: -------------------------------------------------------------
-
+function solution(str, ending){
+  if (str.indexOf(ending) === -1) {
+    return false
+  } else {
+    if (str[str.length - 1] === ending[ending.length - 1]){
+       return true
+    } else {
+      return false
+    }
+  }
+}
 
 // Problem 43: -------------------------------------------------------------
 
