@@ -832,7 +832,7 @@ function solution(str, ending){
   if (str.indexOf(ending) === -1) {
     return false
   } else {
-    if (str[str.length - 1] === ending[ending.length - 1]){
+    if (str[str.length - 1] === ending[ending.length - 1] || ending == ''){
        return true
     } else {
       return false
