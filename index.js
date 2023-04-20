@@ -870,6 +870,16 @@ function cockroachSpeed(s) {
 }
 
 // Problem 46: -------------------------------------------------------------
+function twoSum(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    let rem = target - nums[i];
+    if (nums.indexOf(rem, i + 1) !== -1) {
+      return [i, nums.indexOf(rem, i + 1)]
+    }
+  }
+}
+
+//ChatGPT Solution:
 function twoSum(numbers, target) {
   for (let i = 0; i < numbers.length - 1; i++) {
     for (let j = i + 1; j < numbers.length; j++) {
