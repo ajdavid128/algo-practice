@@ -857,6 +857,10 @@ function filter_list(l) {
 }
 
 // Problem 44: -------------------------------------------------------------
+findSmallestInt(args) {
+  let ordered = args.sort((a,b) => a - b)
+  return ordered[0]
+}
 
 // Problem 45: -------------------------------------------------------------
 
