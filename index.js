@@ -857,12 +857,17 @@ function filter_list(l) {
 }
 
 // Problem 44: -------------------------------------------------------------
-findSmallestInt(args) {
+function findSmallestInt(args) {
   let ordered = args.sort((a,b) => a - b)
   return ordered[0]
 }
 
 // Problem 45: -------------------------------------------------------------
+function cockroachSpeed(s) {
+//   km/h ÷ 0.036 = cm/s
+  let cm = s / .036;
+  return Math.floor(cm);
+}
 
 // Problem 46: -------------------------------------------------------------
 
