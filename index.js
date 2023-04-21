@@ -907,6 +907,12 @@ function findNextSquare(sq) {
   }
 }
 
+// Refactor:
+function findNextSquare(sq) {
+  let sqrt = Math.sqrt(sq)
+  return sqrt%1 === 0 ? Math.pow(sqrt + 1, 2) : -1 
+}
+
 
 // Problem 49: -------------------------------------------------------------
 
