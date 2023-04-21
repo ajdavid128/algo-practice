@@ -897,6 +897,16 @@ function lovefunc(flower1, flower2){
 }
 
 // Problem 48: -------------------------------------------------------------
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  let sqrt = Math.sqrt(sq)
+  if ( sqrt === Math.floor(sqrt)) {
+    return (sqrt + 1) * (sqrt + 1)
+  } else {
+    return -1;
+  }
+}
+
 
 // Problem 49: -------------------------------------------------------------
 
