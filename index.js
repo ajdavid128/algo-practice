@@ -892,7 +892,9 @@ function twoSum(numbers, target) {
 
 
 // Problem 47: -------------------------------------------------------------
-
+function lovefunc(flower1, flower2){
+  return (flower1 + flower2)%2 === 0 ? false : true
+}
 
 // Problem 48: -------------------------------------------------------------
 
