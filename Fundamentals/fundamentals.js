@@ -16,6 +16,18 @@ function findShort(s){
     return lengths[0];
   }
 
+// Community Solution 1:
+function findShort(s){
+    return Math.min(...s.split(" ").map (s => s.length));
+}
+
+// Community Solution 2:
+const findShort = (s) => s
+  .split(' ')
+  .sort((a, b) => b.length - a.length)
+  .pop()
+  .length;
+
 ////////////////////////// PROBLEM #3 //////////////////////////
 
 
