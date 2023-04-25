@@ -8,7 +8,13 @@ function boolToWord( bool ){
 
 ////////////////////////// PROBLEM #2 //////////////////////////
 
-
+function findShort(s){
+    let arr = s.split(' ');
+    let lengths = [];
+    arr.map(e => lengths.push(e.length));
+    lengths.sort((a,b) => a-b);
+    return lengths[0];
+  }
 
 ////////////////////////// PROBLEM #3 //////////////////////////
 
