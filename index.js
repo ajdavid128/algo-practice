@@ -917,3 +917,21 @@ function findNextSquare(sq) {
 // Problem 49: -------------------------------------------------------------
 
 // Problem 50: -------------------------------------------------------------
+
+//Community Solution 1:
+const solution = string => {
+  return [...string].map((char) => {
+    return (char === char.toUpperCase()) ? ` ${char}` : char;
+  }).join('');
+}
+
+//Community Solution 2:
+function solution(string) {
+  string = string.split('').map(function (el) {
+    if (el === el.toUpperCase()) {
+      el = ' ' + el
+    }
+    return el
+  })
+  return string.join('')
+}
