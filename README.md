@@ -581,3 +581,10 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 
 # Problem 50
+
+Complete the solution so that the function will break up camel casing, using a space between words.
+
+    Example:
+    "camelCasing"  =>  "camel Casing"
+    "identifier"   =>  "identifier"
+    ""             =>  ""
