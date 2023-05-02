@@ -20,3 +20,12 @@ function validatePIN(str) {
 
 
 // Problem 4: -------------------------------------------------------------
+
+function sum (numbers) {
+    if (numbers.length == 0) {
+      return 0;
+    }
+    let total = 0;
+    numbers.map(i => total += i);
+    return total;
+  };
