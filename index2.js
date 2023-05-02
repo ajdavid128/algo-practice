@@ -29,3 +29,8 @@ function sum (numbers) {
     numbers.map(i => total += i);
     return total;
   };
+
+//   Community Solution: 
+function sum(numbers) {
+    return numbers.reduce((a, b) => a + b, 0);
+  }
