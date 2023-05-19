@@ -51,8 +51,11 @@ function smash(arr) {
     return arr.join(' ');
 }
 
-
 // Problem 6: -------------------------------------------------------------
+function seriesSum(n) {
+//remember the denominators are going up by 3. figure out a way to calculate counting up and looping through something multiple times
+}
+
 
 // Problem 7: -------------------------------------------------------------
 
