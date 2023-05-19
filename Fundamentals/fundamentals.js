@@ -35,7 +35,9 @@ function invert(array) {
  }
 
 ////////////////////////// PROBLEM #4 //////////////////////////
-
+function sum(arr) {
+  return arr == [] ? 0 : arr.reduce((a,b) => a+b)
+}
 
 
 ////////////////////////// PROBLEM #5 //////////////////////////
