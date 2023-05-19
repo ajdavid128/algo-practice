@@ -17,6 +17,9 @@ function validatePIN(str) {
 }
 
 // Problem 3: -------------------------------------------------------------
+function inverseValue(arr) {
+    return arr.map(i => -i)
+}
 
 
 // Problem 4: -------------------------------------------------------------
