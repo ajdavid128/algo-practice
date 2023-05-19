@@ -17,8 +17,16 @@ function validatePIN(str) {
 }
 
 // Problem 3: -------------------------------------------------------------
-function inverseValue(arr) {
-    return arr.map(i => -i)
+function triangle(a, b, c) {
+    if (a > 0 && b > 0 && c > 0) {
+        if (a + b >= c && b + c >= a && a + c >= b) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
 }
 
 
