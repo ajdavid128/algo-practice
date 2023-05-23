@@ -96,7 +96,12 @@ function removeExclamationMarks(s) {
 
 
 ////////////////////////// PROBLEM #8 //////////////////////////
-
+function abbrevName(name){
+  let arr = name.split(' ');
+  let abbr = '';
+  abbr = arr[0][0] + '.' + arr[1][0];
+  return abbr.toUpperCase();
+}
 
 ////////////////////////// PROBLEM #9 //////////////////////////
 
