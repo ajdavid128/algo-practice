@@ -67,8 +67,32 @@ function max(list){
   return list[list.length - 1];
 }
 
+// Community solution:
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
+
+// Community solution 2:
+var min = function(list){
+  list.sort((a, b) => (a - b));
+  return list[0];
+}
+
+var max = function(list){
+  list.sort((a, b) => (b - a));
+  return list[0];
+}
+
 
 ////////////////////////// PROBLEM #7 //////////////////////////
+function removeExclamationMarks(s) {
+  return s.replaceAll('!','') 
+}
+
+function removeExclamationMarks(s) {
+  return s.replace(/!/g,'') 
+}
+
+// Using RegEx in this way removes all instances of the chosen character. Along with the global attribute (g), it will select every instance of the string and allow you to remove it.
 
 
 ////////////////////////// PROBLEM #8 //////////////////////////
