@@ -103,8 +103,15 @@ function abbrevName(name){
   return abbr.toUpperCase();
 }
 
-////////////////////////// PROBLEM #9 //////////////////////////
+// Community Solution:
+function abbrevName(name){
+  return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+}
 
+////////////////////////// PROBLEM #9 //////////////////////////
+function findDifference(a, b) {
+  return Math.abs(a.reduce((a,b) => a*b) - b.reduce((a,b) => a*b))
+}
 
 ////////////////////////// PROBLEM #10 //////////////////////////
 
