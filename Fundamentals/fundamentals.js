@@ -51,8 +51,21 @@ function countSheeps(arr) {
   return count;
 }
 
-////////////////////////// PROBLEM #6 //////////////////////////
+// Community Solution:
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
 
+////////////////////////// PROBLEM #6 //////////////////////////
+function min(list){
+  list.sort((a,b) => a-b)
+  return list[0];
+}
+
+function max(list){
+  list.sort((a,b) => a-b)
+  return list[list.length - 1];
+}
 
 
 ////////////////////////// PROBLEM #7 //////////////////////////
