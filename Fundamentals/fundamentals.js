@@ -41,8 +41,15 @@ function sum(arr) {
 
 
 ////////////////////////// PROBLEM #5 //////////////////////////
-
-
+function countSheeps(arr) {
+  let count = 0;
+  arr.map(e => {
+    if (e === true) {
+      count += 1;
+    }
+  })
+  return count;
+}
 
 ////////////////////////// PROBLEM #6 //////////////////////////
 
