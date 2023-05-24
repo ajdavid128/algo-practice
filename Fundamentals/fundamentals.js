@@ -122,5 +122,10 @@ function squareSum(n){
   return sum;
 }
 
+function squareSum(n){
+  return n.map(e => e * e).reduce((a,b) => {a+b},0)
+  }
+  // the reduce method allows for an initial value to be set - i.e. the 0 after the comma
+
 
 ////////////////////////// PROBLEM #11 //////////////////////////
