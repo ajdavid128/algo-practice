@@ -935,3 +935,48 @@ function solution(string) {
   })
   return string.join('')
 }
+
+// Problem 51: -------------------------------------------------------------
+
+// ChatGPT Solution:
+function findWords(words) {
+  const rows = [
+    new Set("qwertyuiop"),
+    new Set("asdfghjkl"),
+    new Set("zxcvbnm")
+  ];
+  
+  return words.filter(word => {
+    const lowercaseWord = word.toLowerCase();
+    const row = rows.find(row => {
+      for (const char of lowercaseWord) {
+        if (!row.has(char)) {
+          return false;
+        }
+      }
+      return true;
+    });
+    return row !== undefined;
+  });
+}
+
+/* In this code, we create an array called rows that contains sets of characters representing each row of the American keyboard. We iterate over the words array and convert each word to lowercase using toLowerCase() to perform case-insensitive comparison.
+
+Inside the filter method, we search for a row that contains all the characters of the lowercase word. If we find a matching row, the word is added to the resulting array.
+
+Finally, we return the filtered array containing the words that can be typed using letters from only one row of the keyboard. 
+
+Time Complexity:
+The time complexity of this solution is O(n * m), where n is the number of words in the input array and m is the average length of the words.
+
+In the solution, we iterate over each word in the array using the filter method, which has a time complexity of O(n). For each word, we iterate over its characters to check if they belong to the same row on the keyboard. The inner loop iterates over the characters of the word, which has a time complexity of O(m), where m is the length of the word.
+
+Therefore, the overall time complexity is O(n * m), as we perform the inner loop for each word in the array.
+
+Space Complexity: 
+The space complexity of this solution is O(1) because the amount of additional space used by the algorithm does not depend on the input size.
+
+In the solution, we create a fixed-size array called rows to store the sets of characters representing each row of the keyboard. The size of this array remains constant regardless of the input size. Additionally, we use a few variables for iteration and comparison, which also take up a constant amount of space.
+
+Hence, the space complexity of the solution is O(1).
+*/
