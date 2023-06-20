@@ -31,12 +31,12 @@ records2 = [
 ]
 
 Expected output: []
-*/
+
 
 Complexity Discussion:
 n: the length of the records array
 */
-"use strict";
+
 
 
 function name_order(a, b) {
